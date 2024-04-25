@@ -1,0 +1,4 @@
+
+public class Jefes_De_Proyecto extends Empleados {
+	private double incentivos;
+}

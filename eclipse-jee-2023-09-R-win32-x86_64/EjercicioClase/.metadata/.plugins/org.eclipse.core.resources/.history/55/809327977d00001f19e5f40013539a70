@@ -1,0 +1,12 @@
+package _02_hasmap;
+
+public class _01_HashMap {
+
+	public static void main(String[] args) {
+		//Tenemos otro tipo de estructuras MUY importantes que osn
+		//las llamadas estructuras hash, diccionarios o arrays asociativos
+		//
+
+	}
+
+}

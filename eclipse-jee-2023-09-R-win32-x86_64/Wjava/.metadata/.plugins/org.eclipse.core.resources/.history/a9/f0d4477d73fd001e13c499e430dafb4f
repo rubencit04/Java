@@ -1,0 +1,9 @@
+
+public class Programadores extends Empleados{
+
+	public Programadores(int id, String dni, String nombre, double sb) {
+		super(id, dni, nombre, sb);
+		
+	}
+	
+}

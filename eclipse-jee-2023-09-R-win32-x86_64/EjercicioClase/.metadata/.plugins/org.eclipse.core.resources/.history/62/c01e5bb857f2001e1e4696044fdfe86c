@@ -1,0 +1,12 @@
+package sysos;
+
+public class ImprimirPantalla {
+	
+	public void imprimir(String s) {
+		System.out.println("consola: " + s);
+	}
+	
+	public void imprimir(int n) {
+		System.out.println("consola: " + n);
+	}
+}

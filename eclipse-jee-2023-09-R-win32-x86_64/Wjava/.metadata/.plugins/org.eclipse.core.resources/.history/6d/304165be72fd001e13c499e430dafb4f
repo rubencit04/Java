@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class Directores extends Empleados {
+	ArrayList<Empleados> listaEmpleados;
+	public Directores(int id, String dni, String nombre, double sb) {
+		super(id, dni, nombre, sb);
+		
+	}
+
+	public double calcularSueldo() {
+		int contador = 0;
+		for(Empleados e : listaEmpleados ) {
+			contador++;
+		}
+		return getSb() + (100*contador);
+	}
+	
+	
+	
+}

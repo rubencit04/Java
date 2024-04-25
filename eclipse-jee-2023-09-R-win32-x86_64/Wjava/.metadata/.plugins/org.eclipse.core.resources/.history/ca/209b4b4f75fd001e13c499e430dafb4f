@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("-----Empleados-----");
+		ArrayList<Empleados> e = new ArrayList<>();
+		
+
+	}
+	
+	public void menu () {
+		System.out.println("1. Dar de Alta Empleado");
+		System.out.println("2. Mostrar Empleados");
+		System.out.println("3. Calcular Salario Empleado");
+		System.out.println("4. Calcular Salario Total De Empresa");
+		System.out.println("------------------------------------");
+	}
+}

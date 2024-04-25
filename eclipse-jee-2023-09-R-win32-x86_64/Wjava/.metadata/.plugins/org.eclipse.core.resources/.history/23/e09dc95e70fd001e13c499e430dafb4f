@@ -1,0 +1,9 @@
+
+public class Jefes_De_Proyecto extends Empleados {
+	public Jefes_De_Proyecto(String id, String dni, String nombre, double sb) {
+		super(id, dni, nombre, sb);
+		// TODO Auto-generated constructor stub
+	}
+
+	private double incentivos;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;12_Clases_Objetos_Arrays/src/clase_objeto_array3&apos;&#x0D;&#x0A;- Original project: &apos;12_Clases_Objetos_Arrays&apos;&#x0D;&#x0A;- Destination element: &apos;12_Clases_Objetos_Arrays/src/clase_objeto_array3&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     clase_objeto_array2.Main.java&#x0D;&#x0A;     clase_objeto_array2.Equipo.java" description="Copy compilation units" destination="/src&lt;clase_objeto_array3" element1="/src&lt;clase_objeto_array2{Main.java" element2="/src&lt;clase_objeto_array2{Equipo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1708508236442" units="2" version="1.0"/>
+</session>

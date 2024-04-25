@@ -1,0 +1,18 @@
+package Personas;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		menu();
+	}
+	
+	public static void menu() {
+		System.out.println("-----Personas-----");
+		System.out.println("1. Introducir Persona");
+		System.out.println("2. Mostrar Personas");
+		System.out.println("3. Buscar Persona Por Nombre");
+		System.out.println("4. Salir del programa");
+		System.out.println("-----------------------------");
+	}
+}

@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("-----Empleados-----");
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Empleados> e = new ArrayList<>();
+		
+		int opcion = 0;
+		do{
+			opcion = menu();
+			switch(opcion) {
+			case 1:
+				Programadores Prog = new Programadores();
+				System.out.println("Que tipo de empleado quieres registar");
+				System.out.println("1. Programador");
+				System.out.println("2. Jefe De Proyecto");
+				System.out.println("3. Director");
+				System.out.println("-------------------------------------");
+				System.out.println("Escribe DNI del empleado");
+				Prog.setDni(sc.next());
+				System.out.println("Escribe el Nombre del empleado");
+				Prog.setNombre(sc.next());
+				System.out.println("Escribe el Salario Base del Empleado");
+				Prog.setSb(sc.nextDouble());
+				System.out.println("-------------------------------------");
+				
+				
+				
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+				
+			default:
+				
+			}
+		}while(opcion !=5);
+		
+		
+	}
+	
+	public static int menu () {
+		System.out.println("1. Dar de Alta Empleado");
+		System.out.println("2. Mostrar Empleados");
+		System.out.println("3. Calcular Salario Empleado");
+		System.out.println("4. Calcular Salario Total De Empresa");
+		System.out.println("5. Salir Del Programa");
+		System.out.println("------------------------------------");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Seleccione La Opcion A Elegir");
+		 int opcion = sc.nextInt();
+		return opcion;
+	}
+}

@@ -1,0 +1,40 @@
+package _02_hasmap;
+
+import java.util.HashMap;
+
+public class _01_HashMap {
+
+	public static void main(String[] args) {
+		//Tenemos otro tipo de estructuras MUY importantes que osn
+		//las llamadas estructuras hash, diccionarios o arrays asociativos
+		//segun el lenguaje que estemos usando
+		
+		//Este tipo de estructuras se caracterizan por tener una clave
+		//y un valor asociado, es decir, a partir de una clave podemos
+		//acceder o modificar un valor
+		
+		//Solamente puede haber UNA clave, en caso de que se pongan dos
+		//claves iguales el valor se sobreescribe
+		
+		//Para crear una estructura de tipo Hash , podemos usar la clase
+		//HashMap
+		HashMap<String, Double> hashmapCiudadTemperatura =
+				new HashMap<>();
+		
+		//Podemos establecer claves y valores con push
+		hashmapCiudadTemperatura.put("Madrid", 10.0);
+		hashmapCiudadTemperatura.put("Barcelona", 11.0);
+		
+		//Podemos acceder a los vaores con el metodo get(clave)
+		double temperatura = hashmapCiudadTemperatura.get("Madrid");
+		System.out.println(temperatura);
+		temperatura = hashmapCiudadTemperatura.get("Barcelona");
+		System.out.println(temperatura);
+		//Si accedemos a una clave que NO existe te devuelve NULL
+		temperatura = hashmapCiudadTemperatura.get("Zaragoza");
+		System.out.println(temperatura);
+		
+		
+	}
+
+}

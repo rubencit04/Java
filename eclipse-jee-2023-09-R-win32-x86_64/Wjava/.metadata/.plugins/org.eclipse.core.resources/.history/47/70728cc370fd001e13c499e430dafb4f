@@ -1,0 +1,45 @@
+
+public class Empleados {
+	private int id;
+	private String dni;
+	private String nombre;
+	private double Sb;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getDni() {
+		return dni;
+	}
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public double getSb() {
+		return Sb;
+	}
+	public void setSb(double sb) {
+		Sb = sb;
+	}
+	@Override
+	public String toString() {
+		return "Empleados [id=" + id + ", dni=" + dni + ", nombre=" + nombre + ", Sb=" + Sb + "]";
+	}
+	public Empleados(int id, String dni, String nombre, double sb) {
+		int contador = 1;
+		id = contador++;
+		this.id = id;
+		this.dni = dni;
+		this.nombre = nombre;
+		Sb = sb;
+	}
+	
+	
+}

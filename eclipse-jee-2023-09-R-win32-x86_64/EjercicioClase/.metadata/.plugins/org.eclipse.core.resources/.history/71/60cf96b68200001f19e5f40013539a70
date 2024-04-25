@@ -1,0 +1,84 @@
+package _02_hasmap;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class _01_HashMap {
+
+	public static void main(String[] args) {
+		//Tenemos otro tipo de estructuras MUY importantes que osn
+		//las llamadas estructuras hash, diccionarios o arrays asociativos
+		//segun el lenguaje que estemos usando
+		
+		//Este tipo de estructuras se caracterizan por tener una clave
+		//y un valor asociado, es decir, a partir de una clave podemos
+		//acceder o modificar un valor
+		
+		//Solamente puede haber UNA clave, en caso de que se pongan dos
+		//claves iguales el valor se sobreescribe
+		
+		//Para crear una estructura de tipo Hash , podemos usar la clase
+		//HashMap
+		HashMap<String, Double> hashmapCiudadTemperatura =
+				new HashMap<>();
+		
+		//Podemos establecer claves y valores con push
+		hashmapCiudadTemperatura.put("Madrid", 10.0);
+		hashmapCiudadTemperatura.put("Barcelona", 11.0);
+		
+		//Podemos acceder a los vaores con el metodo get(clave)
+		Double temperatura = hashmapCiudadTemperatura.get("Madrid");
+		System.out.println(temperatura);
+		temperatura = hashmapCiudadTemperatura.get("Barcelona");
+		System.out.println(temperatura);
+		//Si accedemos a una clave que NO existe te devuelve NULL
+		temperatura = hashmapCiudadTemperatura.get("Zaragoza");
+		System.out.println(temperatura);
+		
+		//Las claves son CASE SENSITIVE
+		//No es lo mismo "Madrid" que "MADRID"
+		temperatura = hashmapCiudadTemperatura.get("MADRID");
+		System.out.println(temperatura);
+		
+		//El objetivo de los hasmap es diferente al de los arryas
+		//sireven para hacer busquedas rapidas, no suelen servir
+		//para recorrerlos
+		
+		//Si se quiere recorrer los mejor es una funcion lambda
+		hashmapCiudadTemperatura.forEach((k,v)->{
+			System.out.println(" clave: "+k.toString());
+			System.out.println(" valor: "+v.toString());
+		});
+		
+		ArrayList<String> listaNombres = new ArrayList<String>();
+		listaNombres.add("Gallego");
+		listaNombres.add("Marquitos");
+		listaNombres.add("Guillermo");
+		
+		//Con funciones
+		listaNombres.forEach( v -> System.out.println("Nombre: "+v));
+		
+		//Si ponemos la misma clave, se sobreescribe el valor
+		hashmapCiudadTemperatura.put("Madrid", (double)7);
+		System.out.println(hashmapCiudadTemperatura.get("Madrid"));
+		
+		//Java soporta la inferencia de tipos
+		//Esta caracteristica permite definir el tipo de la variable
+		//en el momento de asignar el primer valor, pero OJO!!!
+		//el tipo de la variable SIEMPRE sera del tipo del valor,
+		//NO se puede cambiar. No confundir con los lenguajes NO
+		//TIPADOS
+		var numero1 = 34.0;
+		System.out.println(numero1);
+		numero1 = true;
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

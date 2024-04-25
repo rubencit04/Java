@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Directores extends Empleados {
+	ArrayList<Empleados> listaEmpleados;
+	public Directores(int id, String dni, String nombre, double sb) {
+		super(id, dni, nombre, sb);
+		
+	}
+
+	
+	
+	
+	
+}

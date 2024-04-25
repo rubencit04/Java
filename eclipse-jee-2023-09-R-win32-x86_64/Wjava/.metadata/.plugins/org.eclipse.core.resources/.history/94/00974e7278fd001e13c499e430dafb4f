@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Directores extends Empleados {
+	ArrayList<Empleados> listaEmpleados;
+	public Directores(int id, String dni, String nombre, double sb, ArrayList<Empleados> listaEmpleados) {
+		super(dni, nombre, sb);
+		this.listaEmpleados = listaEmpleados;
+	}
+	
+	public double calcularSueldo() {
+		return getSb() + (100*listaEmpleados.size());
+	}
+
+	
+	
+	
+}

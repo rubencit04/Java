@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("-----Empleados-----");
+		ArrayList<Empleados> e = new ArrayList<>();
+		do()
+		{
+			int opcion = menu();
+		}While(opcion !=5);
+	}
+	
+	public static int menu () {
+		System.out.println("1. Dar de Alta Empleado");
+		System.out.println("2. Mostrar Empleados");
+		System.out.println("3. Calcular Salario Empleado");
+		System.out.println("4. Calcular Salario Total De Empresa");
+		System.out.println("5.");
+		System.out.println("------------------------------------");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Seleccione La Opcion A Elegir");
+		int opcion = sc.nextInt();
+		return opcion;
+	}
+}

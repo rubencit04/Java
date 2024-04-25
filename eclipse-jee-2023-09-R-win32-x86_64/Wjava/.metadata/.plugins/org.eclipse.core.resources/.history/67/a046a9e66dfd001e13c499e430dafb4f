@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class Directores extends Empleados {
+	ArrayList<Empleados> listaEmpleados;
+	
+	
+}

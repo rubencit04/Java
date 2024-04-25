@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- 
+    El objetivo de este ejemplo es convertir este XML a otro XML con el siguiente formato:
+
+        <tiendas>
+            <tienda marca="amazonias">
+                <identificacion>tablet 7 pulgadas</identificacion>
+                <codigo>1102</codigo>
+                <precio>28.875</precio>
+            </tienda>
+            <tienda marca="Perifericos PC">
+                <identificacion>tablet 10  pulgadas</identificacion>
+                <codigo>1104</codigo>
+                <precio>92.250</precio>
+            </tienda>
+            <tienda marca="Perifericos PC">
+                <identificacion>tablet 14 pulgadas</identificacion>
+                <codigo>1105</codigo>
+                <precio>20.313</precio>
+            </tienda>
+        </tiendas>
+-->
+<?xml-stylesheet type="text/xsl" href="02_XSLT_Productos.xsl"?>
+<productos>
+  <item type="tienda" nombre="amazonias" codigo="1102" producto="tablet 7 pulgadas" precio="28.875"/>
+  <item type="tienda" nombre="Perifericos PC" codigo="1104" producto="tablet 10  pulgadas" precio="92.250"/>
+  <item type="tienda" nombre="Perifericos PC" codigo="1105" producto="tablet 14 pulgadas" precio="20.313"/>
+</productos>

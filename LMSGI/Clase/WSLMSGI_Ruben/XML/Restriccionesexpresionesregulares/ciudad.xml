@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "ciud.xsd">
+<nombre>Espana</nombre>
+<codigo>LI-2342</codigo>
+<poblacion>73613</poblacion>
+<alcalde>
+    <nombre>Alejandro</nombre>
+    <apellidos>Lopez Gomez</apellidos>
+    <edad>20</edad>
+    <telefono>+34839123927</telefono>
+    <tarjeta_credito>312314</tarjeta_credito>
+    <email>pabloalboran@gmail.com</email>
+</alcalde>
+<funcionarios>
+    <funcionario>
+        <id></id>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <codigo_postal></codigo_postal>
+        <fecha_nacimiento></fecha_nacimiento>
+        <contraseña></contraseña>
+        <numero_cuenta></numero_cuenta>
+    </funcionario>
+</funcionarios>
+</ciudad>

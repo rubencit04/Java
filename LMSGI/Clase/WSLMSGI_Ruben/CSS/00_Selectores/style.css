@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    color: yellow;
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+body {
+    background-color: burlywood;
+    text-align: auto;
+}
+
+#section1 {
+    text-align: center;
+    background-color: rgb(165, 42, 110);
+}
+
+#section2 {
+    text-align: center;
+    background-color: rgb(46, 165, 42);
+}
+
+.ul1 {
+    background-color: #f0f0f0;
+    color: white;
+}
+
+.ul2 {
+    color: blue;
+    background-color: red;
+}
+
+table {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2.verde{
+    color: green;
+}
+
+h3 {
+    text-align: center;
+}
+
+p.verde{
+    color: green;
+}

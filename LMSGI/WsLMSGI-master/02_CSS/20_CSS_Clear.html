@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS CLEAR</title>
+    <!--
+        CLEAR
+        -----
+
+        La propiedad 'clear' especifica si un elemento puede estar al lado de elementos 
+        flotantes que lo preceden o si debe mostrarse según su flujo natural. La propiedad 
+        clear aplica tanto a elementos flotantes como no flotantes.
+
+        Clear puede tener los siguientes valores:
+        1. none: Permite que haya elementos flotantes a ambos lados, valor por defecto. 
+        2. right: No puede haber elementos flotantes a la derecha
+        3. left: No puede haber elementos flotantes a la izquierda
+        4. both: No puede haber elementos flotantes a la derecha ni a la izquierda
+        5. inherit: El elemento hereda el valor clear de su padre
+
+        Las propiedades 'float' y 'clear' son muy potentes pero también nos pueden dar muchos
+        quebraderos de cabeza :(
+
+        Ejemplos de CLEAR y FLOAT
+        https://www.w3schools.com/Css/css_float_examples.asp
+
+    -->
+    <style>
+        /*
+        Aquí vamos a tener las mismas cajas que en el ejemplo anterior pero más anchas. Además,
+        queremos ponerlas a la derecha y de dos en dos. Para ello vamos a usar la propiedad 'clear'
+        */
+        h1{
+            text-align: center;
+        }
+
+        .caja1{
+            width: 400px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 2px;
+            float: right;
+        }
+
+        .caja2{
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 2px;
+            float: right;
+        }
+
+        .caja3{
+            width: 400px;
+            height: 100px;
+            background-color: green;
+            border: 2px solid black;
+            margin: 2px;
+            float: right;
+            /*
+            Poniendo la propiedad 'clear:right' estamos diciendo que la caja3 no queremos que 
+            a la derecha tenga ninguna otra caja flotando. De esta manera, la pondremos en el 
+            siguiente bloque de abajo. Como también tiene la propiedad 'float:right', la 
+            situaremos a la derecha.
+            */
+            clear: right;
+        }
+
+        .caja4{
+            width: 400px;
+            height: 100px;
+            background-color: violet;
+            border: 2px solid black;
+            margin: 2px;
+            float: right;
+        }
+
+        /*
+        Hemos creado un separador para direfenciar el ejemplo de arriba del de abajo. Será un div
+        con estas propiedades CSS. En este caso vamos a ver otro ejemplo de 'clear', ya que si no 
+        lo ponemos, el div se situará justo al principio de pantalla debido a que tiene sitio
+        para situarse. Al poner 'clear:right' no permitimos flotar el div por lo que se bajará
+        justo despues de las cajas del primer ejemplo.
+        */
+        .separador{
+            background-color: black;
+            height: 10px;
+            width: 100%;
+            clear: right;
+        }
+
+        /*
+        Este ejemplo es igual que el de arriba, pero flotando a la izquierda
+        */
+        .caja5{
+            width: 400px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 2px;
+            float: left;
+        }
+
+        .caja6{
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 2px;
+            float: left;
+        }
+
+        .caja7{
+            width: 400px;
+            height: 100px;
+            background-color: green;
+            border: 2px solid black;
+            margin: 2px;
+            float: left;
+            clear: left;
+        }
+
+        .caja8{
+            width: 400px;
+            height: 100px;
+            background-color: violet;
+            border: 2px solid black;
+            margin: 2px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplos de cajas flotantes con 'clear'</h1>
+    <div class="caja1"></div>
+    <div class="caja2"></div>
+    <div class="caja3"></div>
+    <div class="caja4"></div>
+
+    <div class="separador"></div>
+
+    <div class="caja5"></div>
+    <div class="caja6"></div>
+    <div class="caja7"></div>
+    <div class="caja8"></div>
+</body>
+
+</html>

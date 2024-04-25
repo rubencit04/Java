@@ -1,0 +1,21 @@
+<!ELEMENT juego (nombre, fecha_creacion, nota, programadores, compañia, web)>
+    <!ATTLIST juego id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fecha_creacion (#PCDATA)>
+    <!ELEMENT nota (#PCDATA)>
+    <!ELEMENT programadores (programador+)>
+    <!ELEMENT programador (nombre, primer_apellido, segundo_apellido, dni, nacimiento, direccion)>
+    <!ELEMENT primer_apellido (#PCDATA)>
+    <!ELEMENT segundo_apellido (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nacimiento (#PCDATA)>
+    <!ELEMENT identificador (#PCDATA)>
+    <!ATTLIST programador id ID #REQUIRED>
+    <!ELEMENT compañia (identificador, nombre, direccion)>
+    <!ELEMENT direccion (calle, codigo_postal, pais)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+
+    

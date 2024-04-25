@@ -1,0 +1,67 @@
+<!DOCTYPE juego SYSTEM "dtd.dtd">
+<juego id="E123">
+    <nombre>Grand theft auto VI</nombre>
+    <fecha_creacion>2014</fecha_creacion>
+    <nota>10</nota>
+    <programadores>
+        <programador id="P1">
+            <nombre>Juan</nombre>
+            <primer_apellido>Cuesta</primer_apellido>
+            <segundo_apellido>Rosal</segundo_apellido>
+            <dni>441839137N</dni>
+            <nacimiento>1989/04/21</nacimiento>
+            <direccion>
+                <calle>Desengaño</calle>
+                <codigo_postal>21</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+        <programador id="E2">
+            <nombre>Emilio</nombre>
+            <primer_apellido>Delgado</primer_apellido>
+            <segundo_apellido>Martinez</segundo_apellido>
+            <dni>73138849M</dni>
+            <nacimiento>1989/04/21</nacimiento>
+            <direccion>
+                <calle>Desengaño</calle>
+                <codigo_postal>21</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+        <programador id="A3">
+            <nombre>Mariano</nombre>
+            <primer_apellido>Delgado</primer_apellido>
+            <segundo_apellido>Gonzalez</segundo_apellido>
+            <dni>561281379F</dni>
+            <nacimiento>1959/04/21</nacimiento>
+            <direccion>
+                <calle>Desengaño</calle>
+                <codigo_postal>21</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+    </programadores>
+    <compañia>
+        <identificador>9283741964</identificador>
+        <nombre>Aqui no hay quien viva</nombre>
+        <direccion>
+            <calle>Desengaño</calle>
+            <codigo_postal>21</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </compañia>
+    <web>
+        <![CDATA[<!DOCTYPE html>
+        <html>
+            <head>
+                <title>Grand theft auto VI</title>
+            </head>
+            <body>
+                <h1 style="text-align: center;">La guerra de las galaxias</h1>
+                <h2 style="text-align: center; color: red;">Grand theft auto VI</h2>
+                <a href="https://media.vandal.net/m/12-2023/2023125940893_1.jpg" style="text-align: center;"></a>
+            </body>
+        </html>
+        ]]>
+    </web>
+</juego>

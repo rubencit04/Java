@@ -1,0 +1,31 @@
+p.enunciado {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+p.tnr {
+    border: solid 3px blue;
+}
+
+h1 {
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+
+}
+
+#especial {
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: solid;
+    border-left-style: dashed;
+    border-top-color:green;
+    border-right-color:yellow;
+    border-bottom-color:red;
+    border-left-color:blue;
+    background-color: antiquewhite;
+}

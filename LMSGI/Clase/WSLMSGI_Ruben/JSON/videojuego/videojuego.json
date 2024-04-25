@@ -1,0 +1,60 @@
+{
+    "juego": {
+        "nombre": "Grand theft auto VI",
+        "fecha_creacion": "2014",
+        "nota": "10",
+        "programadores": [
+            {
+                "id": 1,
+                "nombre": "Juan",
+                "primer_apellido": "Cuesta",
+                "segundo_apellido": "Rosal",
+                "dni": "441839137N",
+                "nacimiento": "1989/04/21",
+                "direccion": {
+                    "calle": "Desengaño",
+                    "codigo_postal": "21",
+                    "pais": "España"
+                }
+            },
+            {
+                "id": 2,
+                "nombre": "Emilio",
+                "primer_apellido": "Delgado",
+                "segundo_apellido": "Martinez",
+                "dni": "73138849M",
+                "nacimiento": "1989/04/21",
+                "direccion": {
+                    "calle": "Desengaño",
+                    "codigo_postal": "21",
+                    "pais": "España"
+                }
+            },
+            {
+                "id": 3,
+                "nombre": "Mariano",
+                "primer_apellido": "Delgado",
+                "segundo_apellido": "Gonzalez",
+                "dni": "561281379F",
+                "nacimiento": "1959/04/21",
+                "direccion": {
+                    "calle": "Desengaño",
+                    "codigo_postal": "21",
+                    "pais": "España"
+                }
+            }
+        ],
+        "compañia": {
+            "identificador": "9283741964",
+            "nombre": "Aqui_No_Hay_Quien_Viva",
+            "direccion": {
+                "calle": "Desengaño",
+                "codigo_postal": "21",
+                "pais": "España"
+            }
+        },
+        "web": {
+            "html": "<!DOCTYPE html><html><head><title>Grand theft auto VI</title></head><body><h1 style=\"text-align: center;\">Grand theft auto VI</h1><h2 style=\"text-align: center; color: red;\">Grand theft auto VI</h2><a href=\"https://media.vandal.net/m/12-2023/2023125940893_1.jpg\" style=\"text-align: center;\"></a></body></html>"
+        }
+    }
+}

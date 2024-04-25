@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inline">inline1</div>
+    <div class="inline">inline2</div>
+    <span class="block">block1</span>
+    <span class="block">block2</span>
+    <a href="https://www.youtube.com/watch?v=46L__ghfF4I" class="inlineblock">inlineblock1</a>
+    <a href="https://www.youtube.com/watch?v=Inf44ntVMp0" class="inlineblock">inlineblock2</a>
+    <br/>
+    <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+    <br/>
+    <button onclick="mostrarOcultarEtiqueta()">Mostrar/Ocultar Etiqueta</button>
+    <p id="oculta">Oculta</p>
+    <script>
+        // Función para mostrar el mensaje de bienvenida
+        function mostrarMensaje() {
+            alert("Bienvenido a JavaScript");
+        }
+
+        // Función para mostrar u ocultar la etiqueta
+        function mostrarOcultarEtiqueta() {
+            var etiqueta = document.getElementById("oculta");
+            
+            // Cambia el estilo de visualización entre "block" y "none"
+            etiqueta.style.display = (etiqueta.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

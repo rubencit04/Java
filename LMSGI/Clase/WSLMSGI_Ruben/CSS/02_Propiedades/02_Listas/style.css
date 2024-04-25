@@ -1,0 +1,14 @@
+ul.icono{
+    list-style-image: url(img/frutas.png);
+    list-style-position: inside;
+    font-size: 50px;
+}
+ol{
+    list-style: upper-alpha;
+}
+ul.anidado{
+    list-style-type: square;
+}
+ol.anidado{
+    list-style-type: lower-roman;
+}

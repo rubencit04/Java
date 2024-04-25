@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Picheri</title>
+</head>
+<body bgcolor="rgba(300, 100, 200, 100)">
+  <header style="text-align: center;"><h1>Spanish Picheri</h1>
+    <img src="img/Logo.png" width="75px"/>
+  </header>  
+  <form action="procesarpeticion.jsp" method="get">
+    <fieldset style="background-color: rgba(224, 184, 6, 0.911);">
+        <legend></legend>
+        <div>
+          <img src="img/Logo.png" width="75px"/>
+        <center><h3><u>Información del Cliente</u></h3></center>
+        <label for="Nombre">Nombre Completo:</label>
+        <input id="nombre" name="Nombre" type="text" placeholder="Nombre y apellidos" required/>
+        <input id="Pass" type="hidden" placeholder="Contraseña cuenta" required/>
+        <label for="direccion">Direccion:</label>
+        <input id0="direccion" type="text" placeholder="Direccion para entrega" required/>
+        <label for="tel">Telefono Movil:</label>
+        <input id="tel" name="tel" type="tel" placeholder="Numero movil" required/>
+        <label for="email">Correo electronico:</label>
+        <input id="email" name="email" type="email" placeholder="Correo" required/>
+        <label for="edad">Edad:</label>
+        <input id="edad" name="edad" type="number"placeholder="Edad"required/>
+        </div>
+        <hr/>
+        <div>
+            <center><h3><u>Pedido de Pizza</u></h3>
+            <div>
+              <table style="text-align: right;">
+                <td>
+                  <label for="tamaño"><h4>Tamaño</h4></label>
+                  <br/>
+                  <input type="radio" name="tamaño" value="Pequeña"/>Pequeña (8 pulgadas)<br/>
+                  <input type="radio" name="tamaño" value="Mediana"/>Mediana (12 pulgadas)<br/>
+                  <input type="radio" name="tamaño" value="Familiar"/>Familar (16 pulgadas)
+                </td>
+                <td>
+                  <label for="Masa"><h4>Masa</h4></label>
+                  <br/>
+                  <input type="radio" name="Masa" value="Fina" checked/>Fina<br/>
+                  <input type="radio" name="Masa" value="Normal"/>Normal<br/>
+                  <input type="radio" name="Masa" value="Gruesa"/>Gruesa<br/>
+                </td>
+                  <td>
+                  <label for="ingredientes" style="text-align: right;"><h4>Ingredi</h4></label>
+                  <input type="checkbox" name="ingredientes" value="Pep"/>Pepperoni<br/>
+                  <input type="checkbox" name="ingredientes" value="Judverdes"/>Judías verdes<br/>
+                  <input type="checkbox" name="ingredientes" value="Jamon"/>Jamón<br/>
+                  <input type="checkbox" name="ingredientes" value="Alcapa"/>Alcaparras<br/>
+                </td>
+                <td>
+                  <h4 style="text-align: left;">entes</h4>
+                  <input type="checkbox" name="ingredientes" value="Ace"/>Aceitunas<br/>
+                  <input type="checkbox" name="ingredientes" value="Ceb"/>Cebolla<br/>
+                  <input type="checkbox" name="ingredientes" value="Salc"/>Salchicha<br/>
+                  <input type="checkbox" name="ingredientes" value="Piña"/>Piña<br/></td>
+                </td>
+                <td>
+                  <label for="salsa"><h4 style="text-align: left;">Salsa</h4></label>
+                  <input type="radio" name="salsa" value="Tom" checked/>Tomate<br/>
+                  <input type="radio" name="salsa" value="Bar"/>Barbacoa<br/>
+                  <input type="radio" name="salsa" value="Pes" />pesto<br/>
+                  <input type="radio" name="salsa" value="Sin"/>Sin Salsa<br/></td>
+                </td>
+              </table>
+        </div>
+        <hr/>
+        <h3><u>Instrucciones Especiales</u></h3>
+        <textarea style="resize: none;" rows="6" cols="111">Si tiene alguna Instruccion escribela aqui</textarea>
+        <hr/>
+        <h3><u>Metodo de Pago</u></h3>
+        <img src="img/tarjeta.png" width="200px" height="60px"/>
+        <br/>
+        <br/>
+        <select name="metodo_pago">
+        <option value="Ef">Efectivo</option>
+        <option value="Tc" selected>Tarjeta de credito</option>
+        <option value="Pay">Paypal</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="terminos">¿Acepta los terminos de uso? </label>
+        <br/>
+        <a href="terminos.html">Terminos</a>
+            <br/>	
+            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required/>
+            <br/>
+            <br/>
+        <input type="submit" value="Enviar Pedido"/>
+        <input type="reset"value="Resetear Información"/>
+        </center>
+        <p style="text-align: right;"><img src="img/Logo.png" width="75px"/></p>
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!ELEMENT empresa (nombre, nif, española, capitalsocial, direccion, empleados)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT española (#PCDATA)>
+<!ELEMENT capitalsocial (euros | dolares | yenes)>
+<!ELEMENT euros (#PCDATA)>
+<!ELEMENT dolares (#PCDATA)>
+<!ELEMENT yenes (#PCDATA)>
+<!ELEMENT direccion (via, nombre, cp, pais)>
+<!ELEMENT via (#PCDATA)> 
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre, apellidos, dni, extranjero, nacimiento, salario, direccion2, casado?)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT extranjero (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ELEMENT casado (#PCDATA)>
+<!ELEMENT direccion2 (calle, pais)>
+<!ELEMENT calle (#PCDATA)>
+<!ENTITY españa SYSTEM "ESPAÑA">

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="emp.xsd" pais="españa" fechaCreacion="2024-02-05" NIF="123456789">
+    <nombre>ABC Company</nombre>
+    <capitalsocial moneda="euros">50000</capitalsocial>
+    <direccion>
+        <tipoVia>calle</tipoVia>
+        <nombreVia>Gran Vía</nombreVia>
+        <CP>28013</CP>
+    </direccion>
+    <empleados>
+        <empleado DNI="ABCDEFGH">
+            <nombre>Juan</nombre>
+            <apellidos>Pérez</apellidos>
+            <DNI>ABCDEFGH</DNI>
+            <extranjero>false</extranjero>
+            <fechaNacimiento>1990-05-15</fechaNacimiento>
+            <salario>3000</salario>
+            <direccion>Principe pio</direccion>
+            <estaCasado>true</estaCasado>
+        </empleado>
+    </empleados>
+</empresa>

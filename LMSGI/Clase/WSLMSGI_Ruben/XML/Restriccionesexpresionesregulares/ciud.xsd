@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="ciudad">
+        <xs:complexType>
+            <xs:sequence>
+                <element name="nombre">
+                    <simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-Z][a-zA-Z]{2,19}" />
+                        </xs:restriction>
+                    </simpleType>
+                </element>
+                <element name="codigo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-Za-z]{2}-\d{2,5}" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </element>
+                <element name="poblacion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minExclusive value="100"></xs:minExclusive>
+                            <xs:maxExclusive value="100000"></xs:maxExclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </element>
+                <element name="alcalde">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z][a-zA-Z]{0,10}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="apellidos">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern
+                                            value="[A-Z][a-zA-Z ]{0,24}([ ][A-Z][a-zA-Z ]{0,24})?" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="edad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minExclusive value="18"></xs:minExclusive>
+                                        <xs:maxExclusive value="120"></xs:maxExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="telefono">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value="[+]\d+[34]\d{9}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tarjeta_credito" type="xs:integer">
+                            </xs:element>
+                            <xs:element name="email">
+                                <xs:simpleType>
+                                    <restriction base="xs:string">
+                                        <pattern value="[^@]+@[^\.]+\..+"></pattern>
+                                    </restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <element name="funcionarios">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="funcionario" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="id">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[A-Z0-9]{1,10}"></xs:pattern>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

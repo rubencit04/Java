@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DEGRADADOS</title>
+    <!--
+        DEGRADADOS
+        ----------
+
+        Los degradados sirven para hacer transacciones de color en el elemento. Estos atributos 
+        e incorporaron en la versión de CSS3.
+
+        Para usar los degradados debemos de usar la propiedad 'background'
+
+        Este atributo funciona de manera diferente según el navegador. 
+        Observa que hemos puesto dos versiones del atributo, 'linear-gradient' y 
+        '–webkit-liner-gradient', el primero sería para Firefox y el segundo para Chromium
+       
+    -->
+    <style>
+
+        .contenedor{
+            margin: 50px;
+        }
+
+        .div1 {
+            border-radius: 25px;
+            padding: 10px;
+            /*
+            El primer parámetro es el punto de partida (left). 
+            El resto de argumentos son los puntos de color que queremos hacer en el degradado
+            */
+            background: linear-gradient(left, red , blue, green);/*Firefox*/
+            background: -webkit-linear-gradient(left, red , blue, green); /*Chromium*/
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color: azure;
+        }
+
+        /*
+            También puede hacerse en diagonal
+        */
+        .div2 {
+            border-radius: 25px;
+            padding: 10px;
+            background: linear-gradient(50deg, red , blue, green);
+            background: -webkit-linear-gradient(50deg, red , blue, green);
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color: azure;
+        }
+
+        /*
+            Tambien pueden formar circulos poniendo 'cicle' en el primer parametro.
+
+            Si quitamos "circle" de la propiedad, formariamos una elipse.
+        */
+        .div3 {
+            border-radius: 25px;
+            padding: 10px;
+            background: radial-gradient(circle, red, blue, green);
+            background: -webkit-radial-gradient(circle, red, blue, green);
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color: azure;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="div1">Peter Parker</div>
+        <div class="div1">Steve Rogers</div>
+    </div>
+    <div class="contenedor">
+        <div class="div2">Tony Stark</div>
+        <div class="div2">Bruce Banner</div>
+    </div>
+    <div class="contenedor">
+        <div class="div3">Dr. Strange</div>
+        <div class="div3">Natasha Romanov</div>
+    </div>
+</body>
+
+</html>

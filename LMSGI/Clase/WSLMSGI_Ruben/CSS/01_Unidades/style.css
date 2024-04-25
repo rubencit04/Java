@@ -1,0 +1,51 @@
+body {
+    background-image: url(img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: flex;
+}
+
+section.primera {
+    color: red;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 500px;
+    height: 720px;
+    left: 35%;
+    border: 2px solid black;
+    opacity: 0.93;
+}
+section.segunda {
+    color: red;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 500px;
+    height: 720px;
+    left: 35%;
+    top: 59%;
+    border: 2px solid black;
+    opacity: 0.93;
+    
+}
+
+h2.cabecera1 {
+    font-size: 10px;
+
+}
+
+img{
+    width: 60%;
+
+}
+
+h2.cabecera2 {
+    font-size: 2em;
+}
+
+article.articulo2 {
+    color: rgb(0, 111, 128);
+}
+p.borde{
+    border-top: 1px solid black;
+}

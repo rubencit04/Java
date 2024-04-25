@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Propiedades Texto</title>
+    <!--
+    Propiedades de Texto
+    --------------------
+
+    1. font-family, tipo de fuente. Podemos poner el nombre de la familia o el genérico
+    - Ejemplo de valores de familia: Arial; Helvetiva; Times New Roman; Verdana; Georgia; 
+    Geneva; Courier;
+    - Ejemplo de valores genéricos: serif, sans-serif, cursive, fantasy, monospace
+    
+    Podemos poner los valores con comillas o sin ellas. En caso de que la familia tenga
+    espacios, entonces es obligatorio con comillas, como "Times New Roman"
+
+    Además, podemos especificar una lista de fuentes, desde la prioridad más alta a la más baja. 
+    (por si no se puede obtener la primera fuente)
+    Ej: font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+        
+    2. font-size, tamaño de la fuente.
+    Ejemplo de Valores: 2px, 3em, large
+
+    3. font-style, estilos
+    Ejemplo de Valores: italic, normal
+
+    4. font-variant, Permite modificar cómo se visualiza el texto.
+    Ejemplo de Valores: normal; small-caps; (versalitas)
+
+    5. font-weight, Aplica el formato de "negrita" al texto. Equivalente a <b>
+    Ejemplo de valores absolutos-> 100, 200, 300 ... 900; bold; normal;
+
+    6. text-decoration, Permite definir diferentes elementos para aplicar al texto, como 
+    subrayado o tachado.
+    Ejemplo de Valores: blinks; (parpadeante): line-through; (tachado); underline; (subrayado); 
+    overline; (sobrerayado)
+
+    7. text-transform, Transformación del texto.
+    Ejemplo de Valores:
+        capitalice; (convierte la primera letra de cada palabra a mayúsculas)
+        uppercase; (todo en mayúsculas)
+        lowercase; (todo en minúsculas)
+
+    8. color, color del texto
+        Ejemplo de Valores:: red; rgb(255,0,0)
+    -->
+
+    <style>
+        h1 {
+            font-family: arial;
+            font-size: 19px;
+            color: #1D3545;
+            text-decoration: underline;/* <u>*/
+        }
+
+        h2 {
+            font-family: 'Times New Roman';
+            font-size: 30px;
+            color: #261d45;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-variant: small-caps;/* pequeñas separaciones entre las letras*/
+            font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+            font-size: 30px;
+            color: #07f76b;
+        }
+
+        p {
+            font-family: 'Geneva';
+            font-size: 45px;
+            color: #1D3545;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-family: 'sans-serif';
+            font-size: 40px;
+            color: #cd0638;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo en H1</h1>
+    <h2>subtitulo</h2>
+    <h3>Subtitulo</h3>
+    <p>Párrafo</p>
+    <blockquote>Cita en bloque</blockquote>
+</body>
+
+</html>

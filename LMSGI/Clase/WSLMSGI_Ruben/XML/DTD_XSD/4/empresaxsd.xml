@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="emp.xsd">
+    <nombre>upgrade</nombre>
+    <nif>14141</nif>
+    <espanola>true</espanola>
+    <capitalsocial>
+        <euros>31.3</euros>
+    </capitalsocial>
+    <direccion>
+        <tipoVia>granvia</tipoVia>
+        <nombreVia>granvia</nombreVia>
+        <CP>21</CP>
+        <pais>españa</pais>
+    </direccion>
+    <empleados>
+        <empleado>
+            <nombre>pedro</nombre>
+            <apellidos>lopez</apellidos>
+            <DNI>1381471F</DNI>
+            <extranjero>false</extranjero>
+            <fechaNacimiento>1993-09-02</fechaNacimiento>
+            <salario>2000</salario>
+            <direccion>
+                <string>callao</string>
+                <pais>espana</pais>
+            </direccion>
+            <estaCasado>false</estaCasado>
+        </empleado>
+    </empleados>
+</empresa>

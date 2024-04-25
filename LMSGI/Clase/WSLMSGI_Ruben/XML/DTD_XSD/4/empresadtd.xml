@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "emp.dtd">
+<empresa>
+    <nombre>upgrade</nombre>
+    <nif>14141</nif>
+    <española>si</española>
+    <capitalsocial>
+        <euros>2999.15</euros>
+    </capitalsocial>
+    <direccion>
+        <via>granvia</via>
+        <nombre>granvia</nombre>
+        <cp>21</cp>
+        <pais>españa</pais>
+    </direccion>
+    <empleados>
+        <empleado>
+            <nombre>pedro</nombre>
+            <apellidos>lopez</apellidos>
+            <dni>5248234723J</dni>
+            <extranjero>no</extranjero>
+            <nacimiento>20/09/1993</nacimiento>
+            <salario>2000</salario>
+            <direccion2>
+                <calle>callao</calle>
+                <pais>españa</pais>
+            </direccion2>
+            <casado>no</casado>
+        </empleado>
+    </empleados>
+</empresa>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del tipo para el atributo 'moneda' en 'capitalsocial' -->
+  <xs:simpleType name="tipoMoneda">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="euros"/>
+      <xs:enumeration value="dolares"/>
+      <xs:enumeration value="yenes"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la longitud del DNI -->
+  <xs:simpleType name="tipoDNI">
+    <xs:restriction base="xs:string">
+      <xs:length value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la longitud del NIF -->
+  <xs:simpleType name="tipoNIF">
+    <xs:restriction base="xs:string">
+      <xs:length value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el salario -->
+  <xs:simpleType name="tipoSalario">
+    <xs:restriction base="xs:double">
+      <xs:minInclusive value="900"/>
+      <xs:maxInclusive value="5000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la dirección del empleado -->
+  <xs:simpleType name="tipoDireccion">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="250"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el nombre de la empresa -->
+  <xs:simpleType name="tipoNombreEmpresa">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del esquema principal -->
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="tipoNombreEmpresa"/>
+        <xs:element name="capitalsocial">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:double">
+                <xs:attribute name="moneda" type="tipoMoneda" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="direccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipoVia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="calle"/>
+                    <xs:enumeration value="plaza"/>
+                    <xs:enumeration value="via"/>
+                    <xs:enumeration value="camino"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombreVia" type="xs:string"/>
+              <xs:element name="CP" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleados">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empleado">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="apellidos" type="xs:string"/>
+                    <xs:element name="DNI" type="tipoDNI"/>
+                    <xs:element name="extranjero" type="xs:boolean"/>
+                    <xs:element name="fechaNacimiento" type="xs:date"/>
+                    <xs:element name="salario" type="tipoSalario"/>
+                    <xs:element name="direccion" type="tipoDireccion"/>
+                    <xs:element name="estaCasado" type="xs:boolean" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute name="DNI" type="tipoDNI" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="pais" type="xs:string" fixed="españa"/>
+      <xs:attribute name="fechaCreacion" type="xs:date" use="optional"/>
+      <xs:attribute name="NIF" type="tipoNIF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

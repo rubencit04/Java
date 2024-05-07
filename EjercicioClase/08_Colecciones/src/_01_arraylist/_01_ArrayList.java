@@ -1,11 +1,11 @@
 package _01_arraylist;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class _01_ArrayList {
 
+	//Clase sobre los array list de la semana del 22/02
 	public static void main(String[] args) {
 		//Los arrays "normales" en java tienen un problema y es que son
 		//estaticos, es decir, una vez creado el array, el tamaño no
@@ -81,7 +81,7 @@ public class _01_ArrayList {
 		int numero1 = 5;
 		//Integer numeroObjeto = new Integer(5);
 		//Normalmente esta el concepto "auto wrapper" que hace
-		//que hava convierta directamente un primitivo a un objeto
+		//que Java convierta directamente un primitivo a un objeto
 		Integer numeroObjeto = 5;//Esto creo un objeto con el valor 5 internamente
 		//Los objetos de tipo wrapper son "inmutables". Un objeto inmutable
 		//se define como un objeto el cual no se puede cambiar NUNCA el valor

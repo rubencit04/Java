@@ -1,9 +1,0 @@
-
-public class Programadores extends Empleados{
-
-	public Programadores(String id, String dni, String nombre, double sb) {
-		super(id, dni, nombre, sb);
-		// TODO Auto-generated constructor stub
-	}
-	
-}

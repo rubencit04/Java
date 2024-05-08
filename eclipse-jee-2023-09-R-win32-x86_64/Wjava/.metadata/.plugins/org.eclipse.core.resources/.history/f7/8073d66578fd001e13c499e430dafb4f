@@ -1,9 +1,0 @@
-
-public class Programadores extends Empleados{
-
-	public Programadores(String dni, String nombre, double sb) {
-		super(dni, nombre, sb);
-		
-	}
-	
-}

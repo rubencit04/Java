@@ -1,0 +1,16 @@
+package interfaces_basico;
+
+import java.util.Random;
+import java.util.function.Supplier;
+
+public class MainInterfacesFuncionales {
+
+	public static void main(String[] args) {
+		//Existen predefinidas interfaces funcionales
+		Supplier<Integer> numeroAleatorio100 = () -> {
+			Random rd = new Random();
+			int numero = rd.nextInt(1,100);
+		};
+	}
+
+}

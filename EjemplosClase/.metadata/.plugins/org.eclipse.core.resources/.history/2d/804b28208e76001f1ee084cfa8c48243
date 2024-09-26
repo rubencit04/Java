@@ -1,0 +1,6 @@
+package interfaces_basico;
+
+@FunctionalInterface
+public interface Operables {
+	double operar(double d1);
+}

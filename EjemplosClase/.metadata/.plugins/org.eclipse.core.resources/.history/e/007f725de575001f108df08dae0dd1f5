@@ -1,0 +1,5 @@
+package interfaces_basico;
+
+public interface Operables {
+	double operar(double d1, double d2);
+}

@@ -1,0 +1,9 @@
+package interfaces_basico;
+
+public class MainInterfacesFuncionales {
+
+	public static void main(String[] args) {
+
+	}
+
+}

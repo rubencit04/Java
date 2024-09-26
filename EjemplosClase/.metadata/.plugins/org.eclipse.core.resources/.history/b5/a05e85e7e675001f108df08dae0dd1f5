@@ -1,0 +1,25 @@
+package interfaces_basico;
+
+public class MainBasico {
+
+	public static void main(String[] args) {
+		Operables operacion = new Suma();
+		System.out.println(operacion.operar(3, 4));
+		operacion = new Resta();
+		System.out.println(operacion.operar(3, 4));
+		
+		Operables multiplicacion = new Operables() {
+			
+			@Override
+			public double operar(double d1, double d2) {
+				double resultado = d1 * d2;
+				return resultado;
+			}
+		};
+		System.out.println(multiplicacion.operar(3, 4));
+		System.out.println(multiplicacion.operar(6, 7));
+		multiplicacion = null;
+		multiplicacion.operar(0, 0);
+	}
+
+}

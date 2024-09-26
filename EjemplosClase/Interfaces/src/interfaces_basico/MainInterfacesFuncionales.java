@@ -1,0 +1,76 @@
+package interfaces_basico;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class MainInterfacesFuncionales {
+
+	public static void main(String[] args) {
+		//Existen predefinidas interfaces funcionales
+		Supplier<Integer> numeroAleatorio100 = () -> {
+			Random rd = new Random();
+			int numero = rd.nextInt(1,100);
+			return numero;
+		};
+		System.out.println(numeroAleatorio100.get());
+		
+		numeroAleatorio100 = new Supplier<Integer>() {
+			
+			@Override
+			public Integer get() {
+				Random rd = new Random();
+				int numero = rd.nextInt(1,100);
+				return null;
+			}
+		};
+		
+		Consumer<String> log = (v) -> {
+			Date date = new Date();
+			System.out.println("*** " + date + " - "+ v);
+		};
+		log.accept("NullPointerException");
+		log.accept("Datos recibidos");
+		
+		Function<Double, Double> raizCuadrada = (v) -> {
+			double raiz = Math.sqrt(v);
+			return raiz;
+		};
+		System.out.println(raizCuadrada.apply(9.0));
+		System.out.println(raizCuadrada.apply(25.0));
+		
+		List<Integer> listaEnteros = new ArrayList<Integer>();
+		listaEnteros.add(1);
+		listaEnteros.add(2);
+		listaEnteros.add(3);
+		
+		//Recorrerlo con un for clasico
+		for(Integer i : listaEnteros) {
+			System.out.println(i);
+		}
+		
+		System.out.println("-----------lamda---------");
+		Consumer<Integer> recorrer = new Consumer<Integer>() {
+			
+			@Override
+			public void accept(Integer t) {
+				System.out.println(t);
+				
+			}
+		};
+		listaEnteros.forEach(recorrer);
+		Consumer<Integer> recorrerLambda = (v) -> {
+			System.out.println(v);
+		};
+		listaEnteros.forEach(recorrerLambda);
+		
+		listaEnteros.forEach(v -> System.out.println(v));
+		
+		
+	}
+
+}

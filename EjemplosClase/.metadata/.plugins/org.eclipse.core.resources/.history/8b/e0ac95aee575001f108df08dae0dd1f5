@@ -1,0 +1,11 @@
+package interfaces_basico;
+
+public class Resta implements Operables{
+
+	@Override
+	public double operar(double d1, double d2) {
+		double resultado = d2 - d1;
+		return resultado;
+	}
+
+}

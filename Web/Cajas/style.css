@@ -1,0 +1,36 @@
+.dinamico1{
+    width: 500px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-top: 10px solid greenyellow;
+    border-left: 10px solid palevioletred;
+    border-bottom: 10px solid cadetblue;
+    border-right: 10px solid yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.dinamico2{
+    width: 500px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-top: 10px solid greenyellow;
+    border-left: 10px double palevioletred;
+    border-bottom: 10px ridge cadetblue;
+    border-right: 10px dotted yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.dinamico3{
+    width: 500px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-top: 10px solid greenyellow;
+    border-left: 10px double palevioletred;
+    border-bottom: 10px ridge cadetblue;
+    border-right: 10px dotted yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

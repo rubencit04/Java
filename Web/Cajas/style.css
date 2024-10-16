@@ -27,9 +27,111 @@
     height: 100px;
     background: rgb(255, 255, 255);
     border-top: 10px solid greenyellow;
-    border-left: 10px double palevioletred;
-    border-bottom: 10px ridge cadetblue;
-    border-right: 10px dotted yellow;
+    border-left: 10px solid palevioletred;
+    border-bottom: 10px solid cadetblue;
+    border-right: 10px solid yellow;
+    border-radius: 0px 20px 50px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.hemisphere{
+    width: 200px;
+    height: 100px ;
+    background: white;
+    border: 5px solid greenyellow;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.hemisphere2{ 
+    width: 200px;
+    height: 100px ;
+    background: white;
+    border: 20px ridge greenyellow;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    border-top: 3px ridge greenyellow;
+    border-bottom: 5px dashed greenyellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.rectangle{
+    width: 200px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border: 5px solid yellow;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.rectangle2{
+    width: 200px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-top: 1px solid white;
+    border-right: 10px double rgb(230, 14, 212);
+    border-left: 10px double rgb(230, 14, 212);
+    border-radius: 100px;
+    border-bottom: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.bullet{
+    width: 200px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border: 5px solid cadetblue;   
+    border-radius: 20px;
+    border-top-right-radius: 700px;
+    border-bottom-right-radius: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.bullet2{
+    width: 200px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-right: 5px ridge yellow;
+    border-top: 5px ridge greenyellow;
+    border-bottom: 5px ridge cadetblue;
+    border-left: 5px ridge rgb(230, 14, 212);
+    border-radius: 20px;
+    border-top-right-radius: 700px;
+    border-bottom-right-radius: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.leaf{
+    width: 200px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(230, 14, 212);
+    border-bottom-left-radius: 200px ;
+    border-top-right-radius: 200px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.leaf2{
+    width: 200px;
+    height: 100px;
+    background: greenyellow;
+    border: 5px solid rgb(230, 14, 212);
+    border-bottom-left-radius: 200px ;
+    border-top-right-radius: 200px ;
+    border-top: 4px solid cadetblue;
+    border-right: 20px solid cadetblue;
+    border-bottom: 4px solid rgb(230, 14, 212);
+    border-left: 20px solid rgb(230, 14, 212);
     align-items: center;
     justify-content: center;
     display: flex;

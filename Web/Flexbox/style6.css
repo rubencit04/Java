@@ -1,0 +1,18 @@
+b{
+    font-size: 30px;
+}
+span{
+    margin-right: 15px;
+}
+
+.contenedor1,.busqueda{
+    width: 100vw;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+.contenido{
+    background-color: blue;
+    width: 100px;
+    border: 10px solid blue;
+}

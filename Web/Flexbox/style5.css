@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.arriba, .abajo {
+    height: 100px;
+    width: 300px;
+}
+.abajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+.boton{
+    background-color: rgb(58, 119, 233);
+    color: white;
+}
+.submit{
+    width: 300px;
+    height: 10px;
+}
+.check {
+    width: 300px;
+    height: 1px;
+}
+.pas{
+    margin-bottom: 10px;
+}
+.boton{
+    margin-top: 10px;
+}

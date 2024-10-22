@@ -21,11 +21,10 @@ body{
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    gap: 1rem;
 }
 .caja2{
     width: 200px;
     height: 200px;
     background-color: white;
-    margin-left: 15px;
-   
 }

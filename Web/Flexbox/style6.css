@@ -7,12 +7,36 @@ span{
 
 .contenedor1,.busqueda{
     width: 100vw;
+    height: 100px;
     display: flex;
+    align-items: flex-end;
     background-color: aquamarine;
-    justify-content: space-between;
+    gap: 10px;
 }
-.contenido{
-    background-color: blue;
+.contenedor1{
+    justify-content: end;
+}
+.contenedor2{
+    height: 30px;
+    background-color: rgb(233, 104, 104);
+    width: 100vw;
+}
+.contenido,.contenido2{ 
     width: 100px;
-    border: 10px solid blue;
+    height: 30px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido2{
+    width: 150px;
+}
+.a{
+    margin-left: 10px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
 }

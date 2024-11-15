@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --font-family-primary: "Exo", serif;
+    --font-family-secundary: "Quattrocento Sans", sans-serif;
+    --color-text: #000000;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-weight-base: 1.5;
+    --color-border: #000000;
+    --text-size-h1: 3.05em;
+    --text-size-h2: 2.44em;
+    --text-size-h3: 1.95em;
+    --text-size-h4: 1.56em;
+    --text-size-h5: 1.25em;
+    --text-size-p: 1em;
+    --text-size-pcaption: .8em;
+    --text-size-pnote: .64em;
+    
+}
+.dark{
+    --font-family-primary: "Exo", serif;
+    --color-text: #ffffff;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-weight-base: 1.5;
+    --color-bg: #000000;
+    --color-border: #ffffff;
+}
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.contenedor{
+   width: 90%;
+   height: 5rem auto;
+}
+h1,h2,h3,h4,h5,h6{
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: var(--font-family-primary);
+}
+h1{
+        font-size: var(--text-size-h1);
+
+}
+h2{
+    font-size: var(--text-size-h2);
+
+}
+h3{
+    font-size: var(--text-size-h3);
+
+}
+h4{
+    font-size: var(--text-size-h4);
+
+}
+h5{
+    font-size: var(--text-size-h1);
+
+}
+p{
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: var(--font-family-secundary);
+    
+}
+p.caption{
+    font-size: var(--text-size-pcaption);
+}
+p.caption{
+    font-size: var(--text-size-pnote);
+}
+.caja{
+    
+    border: 2px solid var(--color-border);
+    
+}
+.bold{
+    font-weight: var(--font-weight-bold);
+}
+.normal{
+    font-weight: var(--font-weight-normal);
+}
+.base{
+    font-weight: var(--font-weight-base);
+}

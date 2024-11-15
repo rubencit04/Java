@@ -1,0 +1,66 @@
+:root{
+    --color-primario: #001427;
+    --color-secundario: #91A69D;
+    --color-terciario: #91C4F2;
+
+    --escala-primaria-1: #001427;
+    --escala-primaria-2: #003568;
+    --escala-primaria-3: #00264A;
+    --escala-primaria-4: #000000;
+    --escala-primaria-5: #000000;
+    
+    --escala-secundario-1: #91A69D;
+    --escala-secundario-2: #EBEDEC;
+    --escala-secundario-3: #BCC7C3;
+    --escala-secundario-4: #6E8E80;
+    --escala-secundario-5: #4E7866;
+    
+    --escala-terciaria-1: #91C4F2;
+    --escala-terciaria-2: #F7FBFF;
+    --escala-terciaria-3: #C0DFFB;
+    --escala-terciaria-4: #69AAE4;
+    --escala-terciaria-5: #468ECE;
+
+    --g-primario-secundario: linear-gradient(90deg, rgba(0,20,39,0.5) 0%,rgba(145,166,157,0.5) 35%);
+    --g-primario-terciario: linear-gradient(90deg, rgba(0,20,39,0.5) 0%,rgba(145,196,242,0.5) 35%);
+}   
+  
+body{
+
+    background-image:var(--g-primario-secundario), url(FONDOS_PANTALLA_TORRENTE.jpg);
+    background-size: cover;
+    background: cover;
+    display: flex;  
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    background: var(--escala-primaria-3);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card h1 {
+  color: var(--escala-secundario-2);
+}   
+
+.card p {
+    color: var(--escala-secundario-2);
+  }
+
+  .card button{
+    background: var(--color-terciario);
+    color: var(--escala-secundario-2);
+    border: none;
+    padding:  10px 15px;
+    border-radius: 5px;
+  }
+
+  
+  

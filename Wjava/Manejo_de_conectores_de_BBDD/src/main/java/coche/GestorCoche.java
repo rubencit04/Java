@@ -1,4 +1,5 @@
-package bbdddao;
+package coche;
+
 import java.util.List;
 
 public class GestorCoche {
@@ -60,7 +61,5 @@ public class GestorCoche {
             return null; 
         }
     }
-    
-    
 }
 

@@ -1,0 +1,18 @@
+:root{
+    --text-color-negro: black ;
+    --text-color-gris: grey;
+
+}   
+.card{
+    width: 325px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: red;
+}
+
+img{
+    width: 250px;
+}

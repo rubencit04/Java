@@ -1,0 +1,96 @@
+@import  url('./variables.css');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    
+}
+.logo{
+    height: 25px;
+    margin: 0;
+    padding: 0px;
+}
+.pokemon{
+    font-family: var(--font-titulo);
+    display: flex;
+    align-items: row;
+    margin-top: 24px;
+    gap: var(--spacing-sm);
+}
+
+.sidebar-elementos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding-left: var(--spacing-md);
+    color: var(--color-black);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    
+}
+
+.sidebar h1 {
+    font-size: var(--font-size-grande);
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-black);
+    
+}
+.sidebar{
+    font-size: var(--font-size-base);
+    color: var(--color-grey);
+    font-weight: var(--font-weight-normal);
+}
+.main-content {
+    width: 80%;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header input {
+    padding: 8px 10px;
+    font-size: var(--font-size-base);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
+    
+}
+
+.busqueda{
+    display: flex;
+}
+
+.lista{
+    display: flex;
+    width: 100px;
+    background-color: #B0B8C6;
+}

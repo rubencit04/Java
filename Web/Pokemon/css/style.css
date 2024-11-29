@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--spacing-md);
 }
 
 .inicio{
@@ -46,6 +46,7 @@
     border-radius: 4px;
     border: 1px solid #ddd;
     padding-left: var(--spacing-md);
+    padding-right: var(--spacing-sm);
     color: var(--color-black);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
@@ -72,8 +73,13 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    flex-direction: row;
     align-items: center;
+    gap: var(--spacing-md);
+    font-family: var(--font-titulo);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
 }
 
 .header input {
@@ -82,15 +88,59 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
-    
+    width: 480px;
+    height: 28px;
 }
 
 .busqueda{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.lupita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 42px;
+    background: #2fc4e9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
 }
 
 .lista{
     display: flex;
-    width: 100px;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+    width: 126px;
+    height: 42px;
     background-color: #B0B8C6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
+    color: var(--color-white);
+}
+
+.cuadricula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+    gap: var(--spacing-md);
+    width: 126px;
+    height: 42px;
+    background-color: #2fc4e9;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
+    color: var(--color-white);
+}
+
+.cartas{
+    width: 144px;
+    height: 222px;
+    background: #2fc4e9;
 }

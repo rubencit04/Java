@@ -26,17 +26,4 @@
     --spacing-lg: 24px;
     --spacing-xl: 32px;
 
-    --pokemon-name: "Charmander";
-    --pokemon-ps: "60";
-    --pokemon-type-icon: "../asset/icons/fuego.png";
-    --pokemon-image: "../asset/images/charmander.PNG";
-    --pokemon-description: "N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg";
-    --pokemon-attack-name: "Placa Ardiente";
-    --pokemon-attack-damage: "30";
-    --pokemon-attack-description: "Este Pokémon también se hace 10 puntos de daño a sí mismo";
-    --pokemon-weakness-icon: "../asset/icons/agua.png";
-    --pokemon-weakness-value: "x2";
-    --pokemon-retreat-icon: "../asset/icons/incolora.png";
-    --pokemon-footer-description: "Este Pokémon nace con una llama en la punta de la cola. Si se apagara, fallecería.";
-
 }

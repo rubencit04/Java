@@ -7,8 +7,8 @@
     <title>Pokemon Card Checker</title>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
+    <div class="contenedor">
+        <div class="barra-lateral">
             <div class="pokemon">
                 <img src="../asset/icons/logo.svg" class="logo">
                 <h1>Pokemon Card</h1>
@@ -41,8 +41,9 @@
             </div>
             <div class="carta-container">
                 <div class="fondocarta">
-                    <div class="carta">
+                    <div class="fuego">
                         <div class="header">
+                            <p class="evolucion">BASICO</p>
                             <p>Charmander</p>
                             <div class="tipo">
                                 <p>PS 60</p>
@@ -57,7 +58,9 @@
                         </div>
                         <div class="habilidades">
                             <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/fuego.png">
+                                </div>
                                 <p>Placa Ardiente</p>
                                 <p>30</p>
                             </div>
@@ -75,257 +78,201 @@
                     <h3>Charmander</h3>
                     <p>Base Set 4</p>
                 </div>
-
                 <div class="fondocarta">
-                    <div class="carta">
+                    <div class="agua">
                         <div class="header">
-                            <p>Charmander</p>
+                            <p class="evolucion">BASICO</p>
+                            <p>Squirtle</p>
                             <div class="tipo">
                                 <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
+                            <img src="../asset/icons/agua.png">
                             </div>
                         </div>
                         <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
+                            <img src="../asset/images/squirtle.PNG">
                         </div>
                         <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
+                            <h1>N° 007 Pokémon Tortuguita Altura: 0,5 m Peso: 9kg</h1>
                         </div>
                         <div class="habilidades">
                             <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
-                                <p>30</p>
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/agua.png">
+                                </div>
+                                <p>Refugio</p>
+                                <p></p>
                             </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
+                            <p class="descripcion-texto">Lanza 1 moneda.Si sale cara, durante el proximo truno de tu rival,se eivita todo el daño inflingido a este Pokémon por ataques.</p>
+                            <div class="habilidad">
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/agua.png">
+                                    <img src="../asset/icons/agua.png">
+                                </div>
+                                <p>Cabezazo</p>
+                                <p>20</p>
+                            </div>
+                
                         </div>
                         <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
+                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/electrico.png">x2</h3></div>
                             <div class="resistencia"><h3>Resistencia</h3></div>
                             <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
                         </div>
                         <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
+                            <p>Cuando se siente en peligro,se esconde en su caparazon y escupoe chorros de agua por la boca.</p>
                         </div>
                     </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
+                    <h3>Squirtle</h3>
+                    <p>Base Set 2</p>
+                </div>
+                <div class="fondocarta">
+                    <div class="electrico electrico-bordeamarillo ">
+                        <div class="header">
+                            <p class="evolucion">BASICO</p>
+                            <p>Pikachu</p>
+                            <div class="tipo">
+                                <p>PS 70</p>
+                            <img src="../asset/icons/electrico.png">
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../asset/images/pikachu.PNG">
+                        </div>
+                        <div class="descripcion">
+                            <h1>N° 025 Pokémon Raton Altura: 0,4 m Peso: 6kg</h1>
+                        </div>
+                        <div class="habilidades">
+                            <div class="habilidad">
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/electrico.png">
+                                </div>
+                                <p>Onda Trueno</p>
+                                <p></p>
+                            </div>
+                            <p class="descripcion-texto">Lanza 1 moneda.Si sale cara, el Pokemon Activo de tu rival pasa a estar Paralizado.</p>
+                            <div class="habilidad">
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/electrico.png">
+                                    <img src="../asset/icons/incolora.png">
+                                    <img src="../asset/icons/incolora.png" class="incolora">
+                                </div>
+                                <p>BolaVoltio</p>
+                               <p>50</p>
+                            </div>
+                
+                        </div>
+                        <div class="atributos">
+                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/lucha.png">x2</h3></div>
+                            <div class="resistencia"><h3>Resistencia <img src="../asset/icons/acero.png">-20</h3></div>
+                            <div class="retirada"><h3>Retirada <img src="../asset/icons/incolora.png"></h3></div>
+                        </div>
+                        <div class="descripcion2">
+                            <p>Recientemente se ha presentado un projecto para reunir numerosos Pikachu y crear con ellos una central electrica</p>
+                        </div>
+                    </div>
+                    <h3>Pikachu</h3>
+                    <p>Base Set 2</p>
                 </div>
 
                 <div class="fondocarta">
-                    <div class="carta">
+                    <div class="electrico electrico-bordeamarillo ">
                         <div class="header">
-                            <p>Charmander</p>
+                                <p class="evolucion">BASICO</p>
+                                <p>Thundurus</p>
                             <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
+                                <p>PS 120</p>
+                            <img src="../asset/icons/electrico.png">
                             </div>
                         </div>
                         <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
+                            <img src="../asset/images/thundurus.PNG">
                         </div>
                         <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
+                            <h1>N° 0642 Pokémon Centella Altura: 1,5 m Peso: 61kg</h1>
                         </div>
                         <div class="habilidades">
                             <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/electrico.png">
+                                </div>
+                                <p>Chispa Apoyo</p>
                                 <p>30</p>
                             </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
+                            <p class="descripcion-texto">Puedes unir 1 carta de Energía <img src="../asset/icons/electrico.png"> de tu mano a 1 de tus Pokémon en Banca.</p>
+                            <div class="habilidad">
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/electrico.png">
+                                    <img src="../asset/icons/electrico.png">
+                                    <img src="../asset/icons/incolora.png">
+                                </div>
+                                <p>Trueno</p>
+                               <p>130</p>
+                            </div>
+                            <p class="descripcion-texto">Se hace 30 puntos de daño a si mismo.</p>
+                
                         </div>
                         <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
+                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/lucha.png">x2</h3></div>
                             <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
+                            <div class="retirada"><h3>Retirada <img src="../asset/icons/incolora.png"></h3></div>
                         </div>
                         <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
+                            <p>Se guia por surcar el cielo lanzando rayos provocando incendios forestales se ha ganado pocas simpatias</p>
                         </div>
                     </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
+                    <h3>Thundurus</h3>
+                    <p>Base Set 2</p>
                 </div>
 
                 <div class="fondocarta">
-                    <div class="carta">
+                    <div class="agua agua-bordeamarillo ">
                         <div class="header">
-                            <p>Charmander</p>
+                            <p class="evolucion">BASICO</p>
+                            <p>Articuno</p>
                             <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
+                                <p>PS 120</p>
+                            <img src="../asset/icons/agua.png">
                             </div>
                         </div>
                         <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
+                            <img src="../asset/images/articuno.PNG">
                         </div>
                         <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
+                            <h1>N° 0144 Pokémon Congelar Altura: 1,7 m Peso: 55,4kg</h1>
                         </div>
                         <div class="habilidades">
                             <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/incolora.png">
+                                    <img src="../asset/icons/incolora.png">
+                                </div>
+                                <p>Tornado</p>
                                 <p>30</p>
                             </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
-                        </div>
-                        <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
-                            <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
-                        </div>
-                        <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
-                        </div>
-                    </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
-                </div>
-
-                <div class="fondocarta">
-                    <div class="carta">
-                        <div class="header">
-                            <p>Charmander</p>
-                            <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
-                        </div>
-                        <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
-                        </div>
-                        <div class="habilidades">
+                            <p class="descripcion-texto"></p>
                             <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
-                                <p>30</p>
+                                <div class="habilidad-tipo">
+                                    <img src="../asset/icons/agua.png">
+                                    <img src="../asset/icons/agua.png">
+                                    <img src="../asset/icons/incolora.png">
+                                </div>
+                                <p>Trueno</p>
+                               <p>100</p>
                             </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
+                            <p class="descripcion-texto">Lanza una moneda Si sale cara, el Pokémon Defensor no puede atacar durante el próximo turno de tu rival.</p>
+                
                         </div>
                         <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
-                            <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
+                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/lucha.png">x2</h3></div>
+                            <div class="resistencia"><h3>Resistencia <img src="../asset/icons/lucha.png">-20</h3></div>
+                            <div class="retirada"><h3>Retirada <img src="../asset/icons/incolora.png"></h3></div>
                         </div>
                         <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
+                            <p>Legendario Pokemon pajaro capaz de generar ventiscas congelando la humedad el aire</p>
                         </div>
                     </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
-                </div>
-
-                <div class="fondocarta">
-                    <div class="carta">
-                        <div class="header">
-                            <p>Charmander</p>
-                            <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
-                        </div>
-                        <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
-                        </div>
-                        <div class="habilidades">
-                            <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
-                                <p>30</p>
-                            </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
-                        </div>
-                        <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
-                            <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
-                        </div>
-                        <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
-                        </div>
-                    </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
-                </div>
-
-                <div class="fondocarta">
-                    <div class="carta">
-                        <div class="header">
-                            <p>Charmander</p>
-                            <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
-                        </div>
-                        <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
-                        </div>
-                        <div class="habilidades">
-                            <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
-                                <p>30</p>
-                            </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
-                        </div>
-                        <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
-                            <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
-                        </div>
-                        <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
-                        </div>
-                    </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
-                </div>
-
-                <div class="fondocarta">
-                    <div class="carta">
-                        <div class="header">
-                            <p>Charmander</p>
-                            <div class="tipo">
-                                <p>PS 60</p>
-                            <img src="../asset/icons/fuego.png">
-                            </div>
-                        </div>
-                        <div class="imagen">
-                            <img src="../asset/images/charmander.PNG">
-                        </div>
-                        <div class="descripcion">
-                            <h1>N° 004 Pokémon Lagartija Altura: 0,6 m Peso: 8,5kg</h1>
-                        </div>
-                        <div class="habilidades">
-                            <div class="habilidad">
-                                <img src="../asset/icons/fuego.png">
-                                <p>Placa Ardiente</p>
-                                <p>30</p>
-                            </div>
-                            <p class="descripcion-texto">Este Pokémon tambien se hace 10 puntos de daño a si mismo </p>
-                        </div>
-                        <div class="atributos">
-                            <div class="debilidad"><h3>Debilidad <img src="../asset/icons/agua.png">x2</h3></div>
-                            <div class="resistencia"><h3>Resistencia</h3></div>
-                            <div class="retirada"><h3>Retirada  <img src="../asset/icons/incolora.png"></h3></div>
-                        </div>
-                        <div class="descripcion2">
-                            <p>Este Pokemon nace con una llama en la punta de la cola. Si se apagara, falleceria.</p>
-                        </div>
-                    </div>
-                    <h3>Charmander</h3>
-                    <p>Base Set 4</p>
+                    <h3>Articuno</h3>
+                    <p>Base Set 2</p>
                 </div>
                 
             </div>

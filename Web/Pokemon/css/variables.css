@@ -26,4 +26,9 @@
     --spacing-lg: 24px;
     --spacing-xl: 32px;
 
+    /*GRADIANTES*/
+    --gradiante-fuego: linear-gradient(135deg, #f97a57d3, #ff3e3ea1);
+    --gradiante-agua: linear-gradient(135deg, #a3d8f4ce 0%, #75b8e1cb 50%, #4aa3dbcc 100%);
+    --gradiante-electrico: linear-gradient(90deg, #ffd900ce 0%, #ffcc00c7 50%, #ffa600cb 100%);
+    --gradiante-psiquico: linear-gradient(180deg, #892be2a4, #da70d6bd);
 }

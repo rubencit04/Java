@@ -147,7 +147,7 @@
     padding: 20px;
     background-color: #fff;
     border: 2px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: var(--spacing-lg);
 }
@@ -166,18 +166,23 @@
 }
 
 .fondocarta{
-    width: 150px;
+    width: 170px;
     height: 300px;
-    background: #ffffff;
     display: flex;
     justify-content: end;
     flex-direction: column;
     gap: var(--spacing-sm);
     font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
-.fuego:hover,.agua:hover,.electrico:hover{
+.fuego:hover,.agua:hover,.electrico:hover,.psiquico:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -195,21 +200,25 @@
     box-shadow: 0 10px 20px rgba(255, 223, 0, 0.6);
 }
 
+.psiquico:hover {
+    box-shadow: 0 10px 20px #892be2a4;
+}
+
 
 
 .fuego{
     display: flex;
     align-items: center; 
     flex-direction: column;
-    width: 100%;
     height: 600px;
     background-color: var();
     border: 5px solid rgba(186,188,191,255);
     border-radius: 5px;
-    background: linear-gradient(135deg, #f97b57, #ff3e3e);
+    background:  var(--gradiante-fuego),url(../asset/images/textura.svg);
+    background-size: cover;
     font-weight: var(--font-weight-bold);
     font-family: var(--font-titulo);
-    
+
 }
 
 .header{
@@ -288,7 +297,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     font-size: 13px;
     margin-top: 10px;
     width: 90%;
@@ -297,7 +306,7 @@
   .habilidad{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     font-size: 9px;
     white-space: nowrap;
     justify-content: space-between;
@@ -333,11 +342,11 @@ font-weight: var(--font-weight-normal);
 .atributos img{
     width: 5px;
     height: 5px;
-  }
+}
 
 .debilidad{
     font-size: 4px;
-    color: rgb(0, 0, 0);
+    color: var(--color-black);
     border-top: 1px solid rgba(186,188,191,255);
     border-bottom: 1px solid rgba(186,188,191,255);
     height: 8px;
@@ -345,11 +354,11 @@ font-weight: var(--font-weight-normal);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
   .resistencia{
     font-size: 4px;
-    color: rgb(0, 0, 0);
+    color: var(--color-black);
     border-top: 1px solid rgba(186,188,191,255);
     border-bottom: 1px solid rgba(186,188,191,255);
     height: 8px;
@@ -357,11 +366,11 @@ font-weight: var(--font-weight-normal);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
   .retirada{ 
     font-size: 4px;
-    color: rgb(0, 0, 0);
+    color: var(--color-black);
     border-top: 1px solid rgba(186,188,191,255);
     border-bottom: 1px solid rgba(186,188,191,255);
     height: 8px;
@@ -386,29 +395,59 @@ font-weight: var(--font-weight-normal);
     display: flex;
     align-items: center; 
     flex-direction: column;
-    width: 100%;
-    height: 600px;
+    height: 100%;
     border: 5px solid rgba(186,188,191,255);
     border-radius: 5px;
-    background: linear-gradient(135deg, #a3d8f4 0%, #75b8e1 50%, #4aa3db 100%);
+    background: var(--gradiante-agua),url(../asset/images/textura.svg);
     font-weight: var(--font-weight-bold); 
     font-family: var(--font-titulo);
+    background-size: cover;
 }
 
   .electrico{
     display: flex;
     align-items: center; 
     flex-direction: column;
-    width: 100%;
-    height: 600px;
+    height: 100%;
     border: 5px solid rgba(186,188,191,255);
     border-radius: 5px;
-    background: linear-gradient(90deg, #ffd700 0%, #ffcc00 50%, #ffa500 100%);
+    background: var(--gradiante-electrico),url(../asset/images/textura.svg);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-titulo);
+    background-size: cover;
 }
 
-  .electrico-bordeamarillo,.agua-bordeamarillo,.fuego-bordeamarillo{
+    .psiquico{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    height: 100%;
+    border: 5px solid rgba(186,188,191,255);
+    border-radius: 5px;
+    background: var(--gradiante-psiquico),url(../asset/images/textura.svg);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-titulo);
+    background-size: cover;
+    position: relative;
+        }
+    .electrico-bordeamarillo,.agua-bordeamarillo,.fuego-bordeamarillo,.psiquico-bordeamarillo{
     border: 5px solid #ffe464;
     
   }
+
+
+  .psiquico-bordeamarillo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    background: url(https://pokemon-project.com/pokedex/img/sprite/Home/256/shiny/608.png), linear-gradient(90deg, #d1d1d1 0%, #c2c2c2 50%, #b1b1b1 100%);
+    background-size: cover;
+    border-radius: 5px;
+    
+    
+}
+

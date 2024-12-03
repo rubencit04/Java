@@ -1,15 +1,17 @@
-@import  url('./variables.css');
-*{
+@import url('./variables.css');
+
+* {
     margin: 0;
     padding: 0;
-    
+
 }
 
 
 
-.contenedor{
+.contenedor {
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 
 .barra-lateral {
@@ -20,14 +22,16 @@
     font-size: var(--font-size-base);
     color: var(--color-grey);
     font-weight: var(--font-weight-normal);
-    
+
 }
-.logo{
+
+.logo {
     height: 25px;
     margin: 0;
     padding: 0px;
 }
-.pokemon{
+
+.pokemon {
     font-family: var(--font-titulo);
     display: flex;
     align-items: row;
@@ -35,14 +39,14 @@
     gap: var(--spacing-sm);
 }
 
-.sidebar-elementos{
+.sidebar-elementos {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
-.inicio{
+.inicio {
     display: flex;
     align-items: center;
     width: 90%;
@@ -55,14 +59,14 @@
     color: var(--color-black);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
-    
+
 }
 
 .barra-lateral h1 {
     font-size: var(--font-size-grande);
     margin-bottom: var(--spacing-lg);
     color: var(--color-black);
-    
+
 }
 
 .main-content {
@@ -74,13 +78,21 @@
 
 .nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     gap: var(--spacing-md);
     font-family: var(--font-titulo);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
+    width: 100%;
+    flex-shrink: initial;
+
+}
+
+.botones {
+    display: flex;
+    gap: var(--spacing-sm);
 }
 
 .nav input {
@@ -93,13 +105,14 @@
     height: 28px;
 }
 
-.busqueda{
+.busqueda {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 480px;
 }
-.lupita{
+
+.lupita {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +124,7 @@
     box-shadow: 0px 0px 5px rgba(155, 154, 154, 0.555);
 }
 
-.lista{
+.lista {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
@@ -125,7 +138,7 @@
     color: var(--color-white);
 }
 
-.cuadricula{
+.cuadricula {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,9 +153,10 @@
     color: var(--color-white);
 }
 
-.carta-container{
+.carta-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     gap: 20px;
     padding: 20px;
     background-color: #fff;
@@ -154,7 +168,7 @@
 
 @media (max-width: 768px) {
     .cartas-container {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -165,7 +179,7 @@
     }
 }
 
-.fondocarta{
+.fondocarta {
     width: 170px;
     height: 300px;
     display: flex;
@@ -182,48 +196,50 @@
 }
 
 
-.fuego:hover,.agua:hover,.electrico:hover,.psiquico:hover{
+.fondocarta:hover{
     transform: scale(1.05);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.fuego:hover {
+.fondocarta:hover .fuego {
     box-shadow: 0 10px 20px rgba(255, 69, 0, 0.6);
-    
 }
 
-.agua:hover {
+.fondocarta:hover .agua {
     box-shadow: 0 10px 20px rgba(30, 144, 255, 0.6);
 }
 
-.electrico:hover {
+.fondocarta:hover .electrico {
     box-shadow: 0 10px 20px rgba(255, 223, 0, 0.6);
 }
 
-.psiquico:hover {
+.fondocarta:hover .psiquico{
     box-shadow: 0 10px 20px #892be2a4;
+}
+
+.fondocarta:hover .planta {
+    box-shadow: 0 10px 20px #32cd32c5;
 }
 
 
 
-.fuego{
+.fuego {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     height: 600px;
     background-color: var();
-    border: 5px solid rgba(186,188,191,255);
+    border: 5px solid rgba(186, 188, 191, 255);
     border-radius: 5px;
-    background:  var(--gradiante-fuego),url(../asset/images/textura.svg);
+    background: var(--gradiante-fuego), url(../asset/images/textura.svg);
     background-size: cover;
     font-weight: var(--font-weight-bold);
     font-family: var(--font-titulo);
 
 }
 
-.header{
+.header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -233,11 +249,12 @@
     margin-top: var(--spacing-xs);
 
 }
-.header p{
+
+.header p {
     margin-left: 10px;
 }
 
-.evolucion{
+.evolucion {
     width: 30px;
     justify-content: center;
     font-size: 6px;
@@ -247,34 +264,35 @@
     align-items: center;
 }
 
-.header .evolucion{
+.header .evolucion {
     margin-left: -3px;
 }
-.tipo{
-    display: flex; 
+
+.tipo {
+    display: flex;
     justify-items: center;
     align-items: center;
     gap: var(--spacing-xs);
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
-.fondocarta img{
+.fondocarta img {
     width: 10px;
 }
 
-.incolora{
+.incolora {
     width: 2px;
 }
 
-.imagen img{
+.imagen img {
     width: 130px;
     height: 100%;
     border-radius: 2px;
-    border: 2px solid  rgba(186,188,191,255);
+    border: 2px solid rgba(186, 188, 191, 255);
     margin-top: 2px;
 }
 
-.descripcion{
+.descripcion {
     margin-top: 5px;
     background: linear-gradient(90deg, #d1d1d1 0%, #c2c2c2 50%, #b1b1b1 100%);
     height: 8px;
@@ -285,15 +303,15 @@
     border-radius: 3px;
     font-family: var(--font-texto);
     font-weight: var(--font-weight-normal);
-  }
+}
 
-  .descripcion h1{
+.descripcion h1 {
     font-size: 4.5px;
     font-family: var(--font-texto);
     font-weight: var(--font-weight-normal);
-  }
+}
 
-  .habilidades{
+.habilidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -302,34 +320,35 @@
     margin-top: 10px;
     width: 90%;
     height: 30%;
-  }
-  .habilidad{
+}
+
+.habilidad {
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 9px;
     white-space: nowrap;
     justify-content: space-between;
-  }
+}
 
-  .habilidad-tipo{
+.habilidad-tipo {
     width: 35px;
 }
 
 
-.descripcion-texto{
-font-size: 6px;
-margin-top: -10px;
-margin-left: var(--spacing-xs);
-font-family: var(--font-texto);
-font-weight: var(--font-weight-normal);
+.descripcion-texto {
+    font-size: 6px;
+    margin-top: -10px;
+    margin-left: var(--spacing-xs);
+    font-family: var(--font-texto);
+    font-weight: var(--font-weight-normal);
 }
 
-.descripcion-texto img{
+.descripcion-texto img {
     width: 5px;
 }
 
-.atributos{
+.atributos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,16 +358,16 @@ font-weight: var(--font-weight-normal);
 
 }
 
-.atributos img{
+.atributos img {
     width: 5px;
     height: 5px;
 }
 
-.debilidad{
+.debilidad {
     font-size: 4px;
     color: var(--color-black);
-    border-top: 1px solid rgba(186,188,191,255);
-    border-bottom: 1px solid rgba(186,188,191,255);
+    border-top: 1px solid rgba(186, 188, 191, 255);
+    border-bottom: 1px solid rgba(186, 188, 191, 255);
     height: 8px;
     width: 35px;
     display: flex;
@@ -356,11 +375,11 @@ font-weight: var(--font-weight-normal);
     justify-content: center;
 }
 
-  .resistencia{
+.resistencia {
     font-size: 4px;
     color: var(--color-black);
-    border-top: 1px solid rgba(186,188,191,255);
-    border-bottom: 1px solid rgba(186,188,191,255);
+    border-top: 1px solid rgba(186, 188, 191, 255);
+    border-bottom: 1px solid rgba(186, 188, 191, 255);
     height: 8px;
     width: 38px;
     display: flex;
@@ -368,19 +387,19 @@ font-weight: var(--font-weight-normal);
     justify-content: center;
 }
 
-  .retirada{ 
+.retirada {
     font-size: 4px;
     color: var(--color-black);
-    border-top: 1px solid rgba(186,188,191,255);
-    border-bottom: 1px solid rgba(186,188,191,255);
+    border-top: 1px solid rgba(186, 188, 191, 255);
+    border-bottom: 1px solid rgba(186, 188, 191, 255);
     height: 8px;
     width: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .descripcion2{
+.descripcion2 {
     font-size: 5.1px;
     display: flex;
     align-items: center;
@@ -389,54 +408,82 @@ font-weight: var(--font-weight-normal);
     margin-bottom: 3px;
     font-family: var(--font-texto);
     font-weight: var(--font-weight-normal);
-  }
-
-  .agua{
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
-    height: 100%;
-    border: 5px solid rgba(186,188,191,255);
-    border-radius: 5px;
-    background: var(--gradiante-agua),url(../asset/images/textura.svg);
-    font-weight: var(--font-weight-bold); 
-    font-family: var(--font-titulo);
-    background-size: cover;
 }
 
-  .electrico{
+.agua {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     height: 100%;
-    border: 5px solid rgba(186,188,191,255);
+    border: 5px solid rgba(186, 188, 191, 255);
     border-radius: 5px;
-    background: var(--gradiante-electrico),url(../asset/images/textura.svg);
+    background: var(--gradiante-agua), url(../asset/images/textura.svg);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-titulo);
     background-size: cover;
 }
 
-    .psiquico{
+.electrico {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     height: 100%;
-    border: 5px solid rgba(186,188,191,255);
+    border: 5px solid rgba(186, 188, 191, 255);
     border-radius: 5px;
-    background: var(--gradiante-psiquico),url(../asset/images/textura.svg);
+    background: var(--gradiante-electrico), url(../asset/images/textura.svg);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-titulo);
+    background-size: cover;
+}
+
+.psiquico {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border: 5px solid rgba(186, 188, 191, 255);
+    border-radius: 5px;
+    background: var(--gradiante-psiquico), url(../asset/images/textura.svg);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-titulo);
     background-size: cover;
     position: relative;
-        }
-    .electrico-bordeamarillo,.agua-bordeamarillo,.fuego-bordeamarillo,.psiquico-bordeamarillo{
+}
+
+.planta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border: 5px solid rgba(186, 188, 191, 255);
+    border-radius: 5px;
+    background: var(--gradiante-planta), url(../asset/images/textura.svg);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-titulo);
+    background-size: cover;
+    position: relative;
+}
+
+.electrico-bordeamarillo,.agua-bordeamarillo,.fuego-bordeamarillo,.psiquico-bordeamarillo,.planta-bordeamarillo {
     border: 5px solid #ffe464;
-    
-  }
+}
 
 
-  .psiquico-bordeamarillo::after {
+
+.planta-bordeamarillo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    background: url(../asset/images/exeggute.png), linear-gradient(90deg, #d1d1d1 0%, #c2c2c2 50%, #b1b1b1 100%);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.psiquico-bordeamarillo::after {
     content: '';
     position: absolute;
     top: 0;
@@ -447,7 +494,4 @@ font-weight: var(--font-weight-normal);
     background: url(https://pokemon-project.com/pokedex/img/sprite/Home/256/shiny/608.png), linear-gradient(90deg, #d1d1d1 0%, #c2c2c2 50%, #b1b1b1 100%);
     background-size: cover;
     border-radius: 5px;
-    
-    
 }
-

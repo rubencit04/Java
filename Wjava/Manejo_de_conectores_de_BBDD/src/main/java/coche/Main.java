@@ -4,12 +4,16 @@ package coche;
 import java.util.List;
 import java.util.Scanner;
 
+import pasajero.GestorPasajero;
+import pasajero.Pasajero;
+
 public class Main {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         boolean fin = false;
         GestorCoche gc = new GestorCoche();
+        GestorPasajero gp = new GestorPasajero();
 
         do {
             menuCoche();
@@ -103,6 +107,54 @@ public class Main {
                     break;
                 case 7:
                 	menuPasajeros();
+                	opcion = sc.nextInt();
+                	switch (opcion) {
+					case 1:
+						 System.out.println("Introduzca el nombre del pasajero:");
+		                    String nombre = sc.nextLine();
+		                    nombre= sc.nextLine(); 
+		                    System.out.println("Introduzca la edad del pasajero");
+		                    int edad = sc.nextInt();
+		                    System.out.println("Introduzca el peso del pasajero");
+		                    double peso = sc.nextDouble();
+
+		                    Pasajero p = new Pasajero();
+		                    p.setNombre(nombre);
+		                    p.setEdad(edad);
+		                    p.setPeso(peso);
+
+		                    alta = gp.alta(p);
+		                    if (alta == 0) {
+		                        System.out.println("Pasajero dado de alta.");
+		                    } else if (alta == 1) {
+		                        System.out.println("Error de conexión con la BBDD.");
+		                    }
+		                    break;
+					case 2:
+	                    System.out.println("Selecciona el ID de la columna para borrar:");
+	                    id = sc.nextInt();
+	                    baja = gp.baja(id);
+	                    if (baja) {
+	                        System.out.println("Pasajero dado de baja.");
+	                    } else {
+	                        System.out.println("Error de conexión con la BBDD.");
+	                    }
+	                    break;
+					case 3: 
+	                    System.out.println("Introduce el ID del pasajero a buscar:");
+	                    id = sc.nextInt();
+	                    Pasajero obtenerIdP = gp.obtener(id);
+	                    System.out.println(obtenerIdP);
+	                    break;
+					case 4: 
+	                    List<Pasajero> listarP = gp.listar();
+	                    System.out.println(listarP);
+	                    break;
+
+					default:
+						break;
+					}
+                	break;
                 case 0: 
                     fin = true;
                     break;

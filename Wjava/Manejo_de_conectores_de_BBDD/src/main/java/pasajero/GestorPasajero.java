@@ -2,6 +2,8 @@ package pasajero;
 
 import java.util.List;
 
+import coche.Coche;
+
 public class GestorPasajero {
 	private DaoPasajeroInterfaz DaoPasajero= new DaoPasajero();
 	

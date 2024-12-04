@@ -32,4 +32,5 @@
     --gradiante-electrico: linear-gradient(90deg, #ffd900ce 0%, #ffcc00c7 50%, #ffa600cb 100%);
     --gradiante-psiquico: linear-gradient(180deg, #892be2a4, #da70d6bd);
     --gradiante-planta: linear-gradient(90deg, #32cd32c5, #a8e063c0, #32cd32c0);
+    --gradiante-lucha: linear-gradient(90deg, #d87c2cc4, #e69a4fc2, #f0bc7dbe);
 }

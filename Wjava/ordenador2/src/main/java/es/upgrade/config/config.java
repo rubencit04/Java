@@ -1,7 +1,6 @@
 package es.upgrade.config;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -29,6 +28,7 @@ public class config {
 		ram.setPrecio(300);
 		listaram.add(ram);
 		return listaram;
+		
 		
 	}
 	

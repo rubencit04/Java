@@ -1,0 +1,75 @@
+{
+    
+        "nombre": "Flameador 2024",
+        "precio" : 1900,
+        "procesador": {
+            "marca": "Manker",
+            "modelo": "9700X",
+            "hz": 5000
+        },
+        "placabase" : {
+            "modelo": "B470",  
+            "marca": "iAmanoob",
+            "slots" : 4
+        }, 
+        "listaram" : [
+            {
+                "id" : 1,
+                "marca" : "Flaming",
+                "tipo": "DDR4",
+                "capacidad": "8GB",
+                "hz": 6000,
+                "cl":30
+            },
+
+            {
+                "id" : 2,
+                "marca" : "Flaming",
+                "tipo": "DDR4",
+                "capacidad": "8GB",
+                "hz": 6000,
+                "cl":30
+            }
+            
+        ],
+
+        "discoduro":{
+            "marca": "Manker",
+            "tipo": "HDD",
+            "capacidad": "2TB"
+        },
+        "fuente":{
+            "marca": "Manker",
+            "modelo": "ATX",
+            "potencia": 740
+        },
+        "tarjetagrafica":{
+            "marca": "iAmanoob",
+            "modelo": "4080",
+            "cuda": 9830
+        },
+        "listaperifericos":[
+            {
+                "tipo": "Teclado",
+                "nombre": "Flaming pro eco 2",
+                "marca": "Flamer Gaming SL"
+            },
+
+            {
+               "tipo": "Raton",
+                "nombre": "Insultating pro 1",
+                "marca": "Flamer Gaming SL"
+            },
+
+            {
+                "tipo": "Monitor",
+                 "nombre": "4K full de chill",
+                 "marca": "Munion S.L."
+             }
+            
+        ]
+           
+        
+    }
+    
+
